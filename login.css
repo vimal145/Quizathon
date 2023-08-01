@@ -1,0 +1,267 @@
+body,
+html {
+  font-size: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: url(Image/background\ image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+label {
+  color: white;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBox {
+  width: 70%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-height: 60vh;
+}
+
+.left {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55rem;
+  height: 100%;
+  border-right: 1px solid black;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  justify-content: center;
+}
+
+.left > img {
+  width: 50%;
+  margin-top: 5rem;
+}
+.left > h2 {
+  font-size: 6rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.leftSignUp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.leftSignUp > p {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.leftSignUp > a {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.right {
+  width: 80rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  justify-content: center;
+}
+.rightInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17rem;
+}
+.user {
+  width: 60%;
+  border: none;
+  height: 4rem;
+  margin: 1rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.checkbox input {
+  width: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.checkbox label {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.checkbox {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.right button {
+  width: 12rem;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  background-color: antiquewhite;
+  transition-duration: 0.3s;
+}
+.right button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.263);
+  color: white;
+  border: 0.1px solid white;
+}
+.right > a {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .left > img {
+    margin-top: 2rem;
+  }
+
+  .rightInput {
+    margin-top: 4rem;
+  }
+
+  .left > h2 {
+    font-size: 5rem;
+    margin: 1.6rem 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .left > img {
+    width: 7rem;
+  }
+  .left h2 {
+    font-size: 4rem;
+  }
+
+  .rightInput {
+    margin-top: 5rem;
+  }
+  .user {
+    width: 70%;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .left > h2 {
+    font-size: 3rem;
+  }
+
+  .leftSignUp > p {
+    font-size: 1.2rem;
+  }
+  .leftSignUp > a {
+    font-size: 1.5rem;
+  }
+  .user {
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    margin: 1rem;
+  }
+  .right button {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1.4rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+  }
+  .checkbox label {
+    font-size: 1rem;
+  }
+  .right > a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainBox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    width: 100%;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .left > img {
+    margin-top: 3rem;
+  }
+  .left > h2 {
+    margin: 1rem 0;
+  }
+
+  .leftSignUp a {
+    margin-bottom: 2rem;
+  }
+
+  .right {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top: 0.001px solid black;
+    border-bottom-left-radius: 20px;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  .rightInput {
+    margin-top: 1rem;
+  }
+  .right button {
+    width: 15rem;
+  }
+  .right > a {
+    margin-bottom: 2rem;
+  }
+}
